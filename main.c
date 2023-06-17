@@ -3,7 +3,7 @@
  *  https://math.hws.edu/graphicsbook/source/glut/first-triangle.c
  */
  
-#include <GLUT/glut.h>   // freeglut.h might be a better alternative, if available...
+#include <GLUT/glut.h>   // freeglut.h might be a better alternative, if available.....
 #include <stdio.h>
 #include <stdlib.h>
 

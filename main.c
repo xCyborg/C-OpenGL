@@ -6,7 +6,6 @@
 #include <GLUT/glut.h>   // freeglut.h might be a better alternative, if available.
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 void display(void) {  // Display function will draw the image.
  
@@ -26,13 +25,6 @@ void display(void) {  // Display function will draw the image.
 }
 
 int main( int argc, char** argv ) {  // Initialize GLUT and
-
-    int r = add(23, 9);
-    printf("result of sum is: %d\n", r);
-    
-    draw_cube(10, 5);
-    draw_cube(20, 10);
-    
     ///GL 3D drawing
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE);    // Use single color buffer and no depth buffer.
@@ -45,4 +37,13 @@ int main( int argc, char** argv ) {  // Initialize GLUT and
                     // Program ends when user closes the window.
     return EXIT_SUCCESS;
 }
-// will push now
+
+
+// #include "main.h"
+//
+// int r = add(23, 9);
+// printf("result of sum is: %d\n", r);
+// 
+// draw_cube(10, 5);
+// draw_cube(20, 10);
+//

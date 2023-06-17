@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260BE04A2A3FC43500CC57B4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260BE0492A3FC43500CC57B4 /* Carbon.framework */; };
 		26ACBAE62A367E0F00B9710B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 26ACBAE52A367E0F00B9710B /* main.c */; };
 		26B1C4EC2A3CA679004229DF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B1C4EB2A3CA679004229DF /* OpenGL.framework */; };
 		26B1C4EE2A3CA6D3004229DF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B1C4ED2A3CA6D3004229DF /* GLUT.framework */; };
@@ -26,12 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		26ACBAE22A367E0F00B9710B /* OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = OpenGL; path = /Users/sami/Documents/CLT/build/Debug/OpenGL; sourceTree = "<absolute>"; };
+		260BE0492A3FC43500CC57B4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		26ACBAE52A367E0F00B9710B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		26B1C4E92A3BCE7B004229DF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		26B1C4EB2A3CA679004229DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		26B1C4ED2A3CA6D3004229DF /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		26B1C4EF2A3CAD23004229DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		26B1C4F32A3CC6DD004229DF /* OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B1C4F02A3CAD23004229DF /* Cocoa.framework in Frameworks */,
+				260BE04A2A3FC43500CC57B4 /* Carbon.framework in Frameworks */,
 				26B1C4EE2A3CA6D3004229DF /* GLUT.framework in Frameworks */,
 				26B1C4EC2A3CA679004229DF /* OpenGL.framework in Frameworks */,
 			);
@@ -54,12 +57,14 @@
 				26B1C4E92A3BCE7B004229DF /* main.h */,
 				26ACBAE52A367E0F00B9710B /* main.c */,
 				26B1C4EA2A3CA679004229DF /* Frameworks */,
+				26B1C4F32A3CC6DD004229DF /* OpenGL */,
 			);
 			sourceTree = "<group>";
 		};
 		26B1C4EA2A3CA679004229DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				260BE0492A3FC43500CC57B4 /* Carbon.framework */,
 				26B1C4EF2A3CAD23004229DF /* Cocoa.framework */,
 				26B1C4ED2A3CA6D3004229DF /* GLUT.framework */,
 				26B1C4EB2A3CA679004229DF /* OpenGL.framework */,
@@ -84,7 +89,7 @@
 			);
 			name = OpenGL;
 			productName = CLT;
-			productReference = 26ACBAE22A367E0F00B9710B /* OpenGL */;
+			productReference = 26B1C4F32A3CC6DD004229DF /* OpenGL */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -108,6 +113,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 26ACBAD92A367E0F00B9710B;
 			productRefGroup = 26ACBAD92A367E0F00B9710B;
@@ -169,6 +175,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -230,6 +237,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -249,22 +257,38 @@
 		26ACBAEA2A367E0F00B9710B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9988P46GMY;
+				CODE_SIGN_ENTITLEMENTS = OpenGL.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "-Wno-deprecated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		26ACBAEB2A367E0F00B9710B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9988P46GMY;
+				CODE_SIGN_ENTITLEMENTS = OpenGL.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "-Wno-deprecated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

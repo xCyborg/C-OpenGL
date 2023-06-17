@@ -27,9 +27,9 @@ void display(void) {  // Display function will draw the image.
 int main( int argc, char** argv ) {  // Initialize GLUT and
     ///GL 3D drawing
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE);    // Use single color buffer and no depth buffer.
-    glutInitWindowSize(500,500);         // Size of display area, in pixels.
-    glutInitWindowPosition(300,100);     // Location of window in screen coordinates.
+//    glutInitDisplayMode(GLUT_SINGLE);    // Use single color buffer and no depth buffer.
+//    glutInitWindowSize(500,500);         // Size of display area, in pixels.
+//    glutInitWindowPosition(300,100);     // Location of window in screen coordinates.
     glutCreateWindow("Hello OpenGL"); // Parameter is window title.
     glutDisplayFunc(display);            // Called when the window needs to be redrawn.
     

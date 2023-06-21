@@ -14,3 +14,4 @@ A pure C-lang reintroduction of basic OpenGL application development on the MacO
    
      gcc -o first-triangle first-triangle.c -lGL -lglut
 
+# Done

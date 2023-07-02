@@ -22,3 +22,9 @@ static void draw_cube(int width, int height) {
         printf("\n");
     }
 }
+
+int factorial(int n)
+{
+    if (n == 1) return 1;
+    else return n * factorial(n - 1);
+}

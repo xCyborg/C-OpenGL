@@ -7,9 +7,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <Carbon/Carbon.h>
+#include "main.h"
 
 void display(void) {  // Display function will draw the image.
-    TextRange tr;
     glClearColor( 0, 0, 0, 1 );  // (In fact, this is the default.)
     glClear( GL_COLOR_BUFFER_BIT );
     
@@ -26,6 +26,7 @@ void display(void) {  // Display function will draw the image.
 }
 
 int main( int argc, char** argv ) {  // Initialize GLUT and
+    printf("%i\n", factorial(4));
     ///GL 3D drawing
     glutInit(&argc, argv);
 //    glutInitDisplayMode(GLUT_SINGLE);    // Use single color buffer and no depth buffer.

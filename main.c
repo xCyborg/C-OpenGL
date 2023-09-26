@@ -32,7 +32,7 @@ int main( int argc, char** argv ) {  // Initialize GLUT and
 //    glutInitDisplayMode(GLUT_SINGLE);    // Use single color buffer and no depth buffer.
 //    glutInitWindowSize(500,500);         // Size of display area, in pixels.
 //    glutInitWindowPosition(300,100);     // Location of window in screen coordinates.
-    glutCreateWindow("Hello OpenGL"); // Parameter is window title.
+    glutCreateWindow("Hello OpenGL 2023"); // Parameter is window title.
     glutDisplayFunc(display);            // Called when the window needs to be redrawn.
     
     glutMainLoop(); // Run the event loop!  This function does not return.

@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		260BE0492A3FC43500CC57B4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		26A02FD52A51A8F90060C9CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		26ACBAE52A367E0F00B9710B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		26B1C4E92A3BCE7B004229DF /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		26B1C4EB2A3CA679004229DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -54,6 +55,7 @@
 		26ACBAD92A367E0F00B9710B = {
 			isa = PBXGroup;
 			children = (
+				26A02FD52A51A8F90060C9CB /* README.md */,
 				26B1C4E92A3BCE7B004229DF /* main.h */,
 				26ACBAE52A367E0F00B9710B /* main.c */,
 				26B1C4EA2A3CA679004229DF /* Frameworks */,

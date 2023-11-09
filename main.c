@@ -3,6 +3,8 @@
  *  https://math.hws.edu/graphicsbook/source/glut/first-triangle.c
  */
  
+// Git successfully re-configered
+
 #include <GLUT/glut.h>   // freeglut.h might be a better alternative, if available. GLAD another option
 #include <stdio.h>
 #include <stdlib.h>

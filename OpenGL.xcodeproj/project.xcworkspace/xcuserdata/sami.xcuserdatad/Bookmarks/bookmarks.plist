@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>children</key>
+			<array>
+				<dict>
+					<key>destination</key>
+					<dict>
+						<key>location-parameters</key>
+						<dict>
+							<key>EndingLineNumber</key>
+							<string>30</string>
+							<key>StartingLineNumber</key>
+							<string>30</string>
+							<key>Timestamp</key>
+							<string>708625338.869653</string>
+						</dict>
+						<key>rebasable-url</key>
+						<dict>
+							<key>base</key>
+							<string>workspace</string>
+							<key>payload</key>
+							<dict>
+								<key>relative-path</key>
+								<string>CLT/main.c</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>is-complete</key>
+					<true/>
+					<key>text-context</key>
+					<dict>
+						<key>focused</key>
+						<string>    printf("result of sum is: %d\n", r);
+</string>
+						<key>leading</key>
+						<string>
+    int r = add(23, 9);
+</string>
+						<key>trailing</key>
+						<string>    
+    draw_cube(10, 5);
+    draw_cube(20, 10);
+</string>
+					</dict>
+					<key>title</key>
+					<string>draw cube func</string>
+					<key>type</key>
+					<string>bookmark</string>
+				</dict>
+			</array>
+			<key>title</key>
+			<string>Done</string>
+			<key>type</key>
+			<string>group</string>
+		</dict>
+	</array>
+</dict>
+</plist>
